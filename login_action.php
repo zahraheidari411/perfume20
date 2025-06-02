@@ -1,5 +1,5 @@
 <?php
-include("connect.php");
+
 
 include("theme-header.php");
 require_once("connect.php");
