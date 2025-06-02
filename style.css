@@ -1,0 +1,630 @@
+    /* تم اصلی - رنگ‌بندی آبی و سفید */
+    
+     :root {
+        --primary-color: #5e0303;
+        --secondary-color: #530409;
+        --dark-color: #24303b;
+        --light-color: #ecf0f1;
+        --success-color: #2add74;
+        --danger-color: #f33b26;
+    }
+    
+    body {
+        font-family: 'Vazir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* برای نوار ناوبری ثابت */
+        direction: rtl;
+    }
+    
+    header {
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(134, 1, 1));
+        color: white;
+        padding: 2rem 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    header p {
+        font-weight: 500;
+    }
+    /* نوار ناوبری */
+    
+    .navbar {
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    @media (max-width: 768px) {
+        .navbar .nav-link {
+            font-size: 14px;
+            padding: 10px;
+        }
+        .imglogo img {
+            width: 100px;
+            /* اندازه مناسب برای گوشی */
+            height: auto;
+        }
+    }
+    
+    .navbar-brand {
+        font-weight: bold;
+        color: var(--dark-color) !important;
+    }
+    
+    .nav-link {
+        color: var(--dark-color) !important;
+        font-weight: 500;
+        margin: 0 5px;
+        transition: all 0.3s;
+    }
+    
+    .nav-link:hover {
+        color: var(--primary-color) !important;
+    }
+    /* محتوای اصلی */
+    
+    main {
+        min-height: calc(100vh - 160px);
+    }
+    /* کارت‌ها */
+    
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        margin-bottom: 20px;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .card-header {
+        background-color: var(--primary-color);
+        color: white;
+    }
+    /* فرم‌ها */
+    
+    .form-control {
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+    
+    .form-control:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+    }
+    
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+        padding: 10px 25px;
+        border-radius: 5px;
+    }
+    
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+    
+    .btn-danger {
+        background-color: var(--danger-color);
+        border-color: var(--danger-color);
+    }
+    
+    .h2 {
+        text-align: left;
+    }
+    
+    .imglogo {
+        width: 20%;
+        height: 20%;
+        text-align: left;
+    }
+    /* فوتر */
+    
+    .pcenter {
+        color: white;
+    }
+    /* صفحه درباره ما */
+    
+    .about-content {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    /* صفحه مدیریت */
+    
+    .management-item {
+        background-color: white;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    /* پیام‌ها */
+    
+    .alert {
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    /* نسخه موبایل */
+    
+    @media (max-width: 768px) {
+        body {
+            padding-top: 70px;
+        }
+        .navbar-nav {
+            text-align: right;
+        }
+    }
+    
+    a {
+        color: rgb(93, 34, 231);
+    }
+    
+    .coloraa {
+        color: white;
+    }
+    
+    img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px
+    }
+    /* استایل هدر */
+    
+    header.bg-primary {
+        background: linear-gradient(to right, #0066cc, #0099ff);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    /* نام کاربری بالا سمت راست */
+    
+    header .badge {
+        font-size: 1rem;
+        background-color: #ffffff;
+        color: #333;
+        border-radius: 20px;
+    }
+    /* لوگو */
+    
+    .imglogo img {
+        max-height: 60px;
+    }
+    /* navbar */
+    
+    .navbar {
+        background-color: #ffffff;
+        border-bottom: 2px solid #e0e0e0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navbar-nav .nav-link {
+        color: #333;
+        font-size: 1rem;
+        padding: 10px 15px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        background-color: #f0f0f0;
+        color: #007bff;
+        border-radius: 8px;
+    }
+    /* آیتم‌های خاص */
+    
+    .navbar-nav .nav-link i,
+    .navbar-nav .nav-link svg {
+        margin-left: 5px;
+        vertical-align: middle;
+    }
+    /* آیتم فعال */
+    
+    .navbar-nav .nav-item.active .nav-link {
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 8px;
+    }
+    /* استایل دکمه منو موبایل */
+    
+    .navbar-toggler {
+        border-color: #007bff;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%230077ff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 119, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    
+    img {
+        text-align: left;
+    }
+    
+    h1,
+    h3 {
+        color: #2c3e50;
+        font-weight: bold;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+    /* استایل برای کارت محتوا */
+    
+    .card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+    }
+    
+    .card p {
+        color: #34495e;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    /* استایل برای تصویر */
+    
+    img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+    }
+    
+    .imglogo {
+        text-align: left;
+        border-radius: 0px;
+        object-fit: cover;
+    }
+    /* ریسپانسیو برای صفحات موبایل */
+    
+    @media (max-width: 768px) {
+        .row {
+            flex-direction: column;
+            align-items: center;
+        }
+        .col-md-6 {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    /* استایل برای ناوبری */
+    
+    .navbar {
+        background-color: #2c3e50;
+    }
+    
+    .navbar a {
+        color: #ecf0f1;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.1rem;
+    }
+    
+    .navbar a:hover {
+        color: #3498db;
+    }
+    /* استایل برای کارت اصلی */
+    
+    .card p {
+        color: #34495e;
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    
+    .divmain {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .col-md-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* استایل کلی بدن صفحه */
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        /* پس‌زمینه روشن */
+        color: #333;
+    }
+    /* استایل منوی ناوبری */
+    
+    .navbar {
+        background-color: #fff;
+        /* پس‌زمینه سفید برای ناوبری */
+        padding: 15px 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* سایه ظریف */
+    }
+    
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .nav-item {
+        position: relative;
+    }
+    /* استایل لینک‌ها */
+    
+    .nav-link {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+        text-transform: capitalize;
+        padding: 10px 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        background-color: transparent;
+    }
+    
+    .nav-link i {
+        margin-right: 8px;
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+    /* تغییرات هنگام هاور */
+    
+    .nav-link:hover {
+        color: #fff;
+        background-color: #e74c3c;
+        /* پس‌زمینه قرمز */
+        transform: translateY(-3px);
+        /* حرکت کمی به بالا */
+    }
+    
+    .nav-link:hover i {
+        transform: rotate(10deg);
+        /* چرخش آیکون هنگام هاور */
+    }
+    /* استایل منوی کشویی */
+    
+    .dropdown-menu {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    }
+    /* ظاهر شدن منوی کشویی هنگام هاور */
+    
+    .nav-item.dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    /* استایل آیتم‌های منوی کشویی */
+    
+    .dropdown-item {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        transition: background-color 0.3s ease;
+        border-radius: 8px;
+    }
+    /* تغییر رنگ آیتم‌ها هنگام هاور */
+    
+    .dropdown-item:hover {
+        background-color: #e74c3c;
+        /* رنگ پس‌زمینه قرمز */
+        color: #fff;
+    }
+    /* استایل منوی کشویی باز */
+    
+    .nav-item.dropdown:hover .dropdown-toggle {
+        color: #e74c3c;
+        /* تغییر رنگ منوی کشویی هنگام هاور */
+    }
+    /* انیمیشن برای باز شدن منو */
+    
+    @keyframes dropdownAnimation {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /* استایل کلی بدن صفحه */
+    /* هدر */
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo a {
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .nav-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .nav-item {
+        margin-left: 20px;
+    }
+    
+    .nav-link {
+        color: #fff;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        background-color: #e74c3c;
+    }
+    
+    .main-content {
+        padding: 50px 30px;
+        text-align: center;
+    }
+    /* بخش محصولات */
+    
+    .product-section h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .product-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .product-card {
+        background-color: #fff;
+        width: 220px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .product-card h3 {
+        margin: 15px 0;
+        font-size: 20px;
+    }
+    
+    .product-card p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .btn {
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+        background-color: #c0392b;
+    }
+    /* فوتر */
+    
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .container:hover {
+        transform: translateY(-2px);
+    }
+    /* عنوان */
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #2c3e50;
+    }
+    /* فیلدهای فرم */
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        transition: border 0.3s ease;
+    }
+    
+    input:focus,
+    select:focus {
+        border-color: #3498db;
+        outline: none;
+    }
+    /* دکمه‌ها */
+    
+    button,
+    input[type="submit"] {
+        background-color: #3498db;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        transition: background 0.3s ease;
+    }
+    
+    button:hover,
+    input[type="submit"]:hover {
+        background-color: #2980b9;
+    }
+    /* برای ریسپانسیو بودن در موبایل */
+    
+    @media (max-width: 600px) {
+        .container {
+            padding: 20px;
+        }
+    }
