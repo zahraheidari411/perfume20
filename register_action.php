@@ -1,7 +1,6 @@
 <?php
 session_start();
 ob_start();
-
 include("theme-header.php");
 
 // اتصال به دیتابیس
@@ -66,5 +65,4 @@ mysqli_close($conn);
 ob_end_flush();
 
 include("theme-footer.html");
-
 ?>

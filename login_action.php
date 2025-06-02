@@ -4,10 +4,10 @@ include("connect.php");
 include("theme-header.php");
 require_once("connect.php");
 
-$dblink = mysqli_connect("localhost", "root", "", "perfumezahra");
+$conn = mysqli_connect("localhost", "root", "", "perfumezahra");
 
-$username = mysqli_real_escape_string($dblink, $_POST["username"]);
-$password = mysqli_real_escape_string($dblink, $_POST["password"]);
+$username = mysqli_real_escape_string($conn, $_POST["username"]);
+$password = mysqli_real_escape_string($conn, $_POST["password"]);
 
 // اگر مدیر بود
 if ($username === "admin@y" && $password === "9090") {
@@ -21,7 +21,7 @@ if ($username === "admin@y" && $password === "9090") {
 }
 
 // بررسی در جدول user
-$result = mysqli_query($dblink, "SELECT * FROM `user1` WHERE `username`='$username' AND `password`='$password'");
+$result = mysqli_query($conn, "SELECT * FROM `user1` WHERE `username`='$username' AND `password`='$password'");
 $row = mysqli_fetch_array($result);
 
 // اگر در دیتابیس بود
@@ -33,7 +33,7 @@ if ($row) {
     echo "<script>location.replace('gallery.php');</script>";
 
 } 
-mysqli_close($dblink);
+mysqli_close($conn);
 include("theme-footer.html");
 
 ?>

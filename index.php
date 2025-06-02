@@ -119,9 +119,7 @@ include("theme-header.php");
 <nav class="row divmain">
     <div class="slideshow-container">
         <!-- Slides -->
-        <div class="mySlides fade">
-            <img src="chatgpt.jpg" alt="تبلیغات1">
-        </div>
+ 
         <div class="mySlides fade">
             <img src="chatgpt2.jpg" alt="تبلیغات2">
         </div>
